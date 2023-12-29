@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OcrCamera</string>
+    <string name="ocr_text">文字识别</string>
+    <string name="ocr_license_plate">车牌识别</string>
+    <string name="ocr_id_card">身份证识别</string>
+    <string name="back">返回</string>
+</resources>

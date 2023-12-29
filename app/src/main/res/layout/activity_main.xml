@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_full_screen"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:id="@+id/ll_ocr_option"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="220dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="80dp"
+            android:src="@drawable/ocr_icon" />
+
+        <Button
+            android:id="@+id/btn_ocr_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/btn_bg_selected"
+            android:onClick="onClick"
+            android:text="@string/ocr_text"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_ocr_license_plate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/btn_bg_selected"
+            android:onClick="onClick"
+            android:text="@string/ocr_license_plate"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btn_ocr_id_card"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="50dp"
+            android:background="@drawable/btn_bg_selected"
+            android:onClick="onClick"
+            android:text="@string/ocr_id_card"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_curve"
+        android:layout_width="match_parent"
+        android:layout_height="830dp"
+        android:layout_marginTop="-500dp"
+        android:background="@drawable/bg_ring" />
+</RelativeLayout>
+

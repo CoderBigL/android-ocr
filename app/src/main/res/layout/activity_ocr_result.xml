@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OcrResultActivity"
+    android:background="@drawable/bg_full_screen">
+
+    <LinearLayout
+        android:id="@+id/ll_ocr_result"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="36dp">
+
+        <ImageView
+            android:id="@+id/iv_show_picture"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="fitXY" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_ocr_result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_result_option"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <ImageButton
+            android:id="@+id/btn_copy"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/btn_circle_selected"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/copy"
+            android:textColor="@color/white" />
+
+        <ImageButton
+            android:id="@+id/btn_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/btn_circle_selected"
+            android:onClick="onClick"
+            android:scaleType="centerInside"
+            android:src="@drawable/back"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/iv_scan"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/saomiao"
+        android:visibility="gone" />
+</RelativeLayout>
